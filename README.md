@@ -47,3 +47,5 @@ Run the following commands to make a random agent play a game and make a video r
 python3 01_random_play.py
 ./02_make_video.sh
 ```
+
+![random-play](./workspace/session-01/demo-random-play.gif)
