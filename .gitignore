@@ -1,3 +1,8 @@
+.DS_Store
+gfootball
+workspace/**/frames
+workspace/**/log
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
