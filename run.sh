@@ -4,4 +4,6 @@
     --platform linux/amd64 \
     --name gfr \
     -v ./workspace:/workspace \
-    gfootball:latest
+    -w /workspace \
+    -p 8888:8888 \
+    gfootball:2.10.2-facamp.1
