@@ -24,8 +24,16 @@ docker pull hisplan/gfootball:2.10.2-facamp.1
 
 The following command will start a Docker container with the necessary environment:
 
+### macOS / Linux
+
 ```bash
 ./run.sh
+```
+
+### Windows
+
+```
+run.bat
 ```
 
 Once inside the container, you can run the following command to check if everything is set up correctly:
