@@ -13,7 +13,6 @@
   - Exploring the Google Research Football environment
   - Comparing different representations
 - Session 02: Actions and Control
-  - Random play and making a replay video
   - Rule-based agent control
 - Session 03: Training with Reinforcement Learning
   - Using Stable Baseline 3 to train a reinforcement learning agent
