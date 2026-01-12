@@ -1,17 +1,24 @@
 import gfootball.env as football_env
 from stable_baselines3 import PPO
+from custom_reward import CustomReward
 import utils
 
 
 def main():
 
     env = football_env.create_environment(
-        env_name="academy_empty_goal_close", render=True
+        env_name="1_vs_1_easy",
+        render=True,
+        write_video=False,
+        representation="simple115v2",
+        rewards="scoring",
     )
+
+    env = CustomReward(env)
 
     obs = env.reset()
 
-    model = PPO.load("model-ppo.zip")
+    model = PPO.load("model.zip")
 
     done = False
     max_steps = 500
@@ -33,13 +40,10 @@ def main():
 
         total_reward += reward
 
+    env.close()
+
     print(f"Step: {t}/{max_steps}", "Reward:", reward, "Done:", done)
-
-    env.close()
-
     print("Total reward:", total_reward)
-
-    env.close()
 
 
 if __name__ == "__main__":

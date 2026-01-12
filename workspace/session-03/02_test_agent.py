@@ -6,7 +6,7 @@ import utils
 def main():
 
     env = football_env.create_environment(
-        env_name="academy_empty_goal_close", render=False
+        env_name="academy_empty_goal_close", render=True
     )
 
     obs = env.reset()
@@ -23,9 +23,9 @@ def main():
         action, _ = model.predict(obs)
         obs, reward, done, info = env.step(action)
 
-        frame = env.render(mode="rgb_array")
-        if frame is not None:
-            utils.save_frame(frame, t)
+        #frame = env.render(mode="rgb_array")
+        #if frame is not None:
+        #    utils.save_frame(frame, t)
 
         if t % 20 == 0:
             print(f"Step: {t}/{max_steps}", "Reward:", reward, "Done:", done)
@@ -44,8 +44,8 @@ def main():
 
 if __name__ == "__main__":
 
-    utils.cleanup()
+    # utils.cleanup()
 
     main()
 
-    utils.make_video()
+    # utils.make_video()
