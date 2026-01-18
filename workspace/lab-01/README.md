@@ -1,4 +1,4 @@
-# Session
+# Lab
 
 - Smoke test
 - Random play

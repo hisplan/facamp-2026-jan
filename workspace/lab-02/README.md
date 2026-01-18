@@ -1,4 +1,4 @@
-# Session
+# Lab
 
 Making Replay Video
 
