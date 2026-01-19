@@ -7,4 +7,4 @@
     -w /workspace \
     -p 8888:8888 \
     -p 6006:6006 \
-    gfootball:2.10.2-facamp.1
+    hisplan/gfootball:2.10.2-facamp.1
