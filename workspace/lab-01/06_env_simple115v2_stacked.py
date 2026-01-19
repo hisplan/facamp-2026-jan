@@ -16,7 +16,7 @@ for t in range(50):
     action = env.action_space.sample()  # random play
     obs, reward, done, info = env.step(action)
 
-print("gfootball eenvironment reset OK")
+print("gfootball environment reset OK")
 print("action space:", env.action_space)
 
 print(obs)

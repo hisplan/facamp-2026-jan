@@ -6,7 +6,7 @@ env = football_env.create_environment(
 
 obs = env.reset()
 
-print("gfootball eenvironment reset OK")
+print("gfootball environment reset OK")
 print("action space:", env.action_space)
 
 print(obs.shape)
