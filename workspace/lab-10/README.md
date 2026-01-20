@@ -18,6 +18,8 @@ screen -S tensorboard bash -l
 tensorboard --logdir ./tensorboard/ --bind_all
 ```
 
+⚠️ You must run your train code from the same directory where tensorboard is running.
+
 Open http://localhost:6006/ in your browser.
 
 Press CTRL+A then D to detach from the screen session.
